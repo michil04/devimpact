@@ -1,5 +1,5 @@
 Devimpact::Application.routes.draw do
-  resources :registers
+  resources :developers
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

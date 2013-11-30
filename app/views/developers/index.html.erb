@@ -1,0 +1,85 @@
+<h1>Listing developers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Email</th>
+      <th>Phone number</th>
+      <th>Zip</th>
+      <th>Your skillsets</th>
+      <th>Politics</th>
+      <th>Vegetarian</th>
+      <th>Education</th>
+      <th>Developing countries</th>
+      <th>Technology education</th>
+      <th>Local poverty</th>
+      <th>International poverty</th>
+      <th>Utilities access</th>
+      <th>Food and water</th>
+      <th>Wildlife</th>
+      <th>Environment</th>
+      <th>Children</th>
+      <th>World peace</th>
+      <th>Veterans</th>
+      <th>Art and culture</th>
+      <th>Business support</th>
+      <th>Religion</th>
+      <th>Science research</th>
+      <th>Medical research</th>
+      <th>Healthcare and medical aid</th>
+      <th>Expand in anyway</th>
+      <th>Number available hours</th>
+      <th>Linkedin profile</th>
+      <th>Projects you are interested in</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @developers.each do |developer| %>
+      <tr>
+        <td><%= developer.first_name %></td>
+        <td><%= developer.last_name %></td>
+        <td><%= developer.email %></td>
+        <td><%= developer.phone_number %></td>
+        <td><%= developer.zip %></td>
+        <td><%= developer.your_skillsets %></td>
+        <td><%= developer.politics %></td>
+        <td><%= developer.vegetarian %></td>
+        <td><%= developer.education %></td>
+        <td><%= developer.developing_countries %></td>
+        <td><%= developer.technology_education %></td>
+        <td><%= developer.local_poverty %></td>
+        <td><%= developer.international_poverty %></td>
+        <td><%= developer.utilities_access %></td>
+        <td><%= developer.food_and_water %></td>
+        <td><%= developer.wildlife %></td>
+        <td><%= developer.environment %></td>
+        <td><%= developer.children %></td>
+        <td><%= developer.world_peace %></td>
+        <td><%= developer.veterans %></td>
+        <td><%= developer.art_and_culture %></td>
+        <td><%= developer.business_support %></td>
+        <td><%= developer.religion %></td>
+        <td><%= developer.science_research %></td>
+        <td><%= developer.medical_research %></td>
+        <td><%= developer.healthcare_and_medical_aid %></td>
+        <td><%= developer.expand_in_anyway %></td>
+        <td><%= developer.number_available_hours %></td>
+        <td><%= developer.linkedin_profile %></td>
+        <td><%= developer.projects_you_are_interested_in %></td>
+        <td><%= link_to 'Show', developer %></td>
+        <td><%= link_to 'Edit', edit_developer_path(developer) %></td>
+        <td><%= link_to 'Destroy', developer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Developer', new_developer_path %>

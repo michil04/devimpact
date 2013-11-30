@@ -1,0 +1,65 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  phone_number: MyString
+  zip: 1
+  your_skillsets: MyText
+  politics: false
+  vegetarian: false
+  education: false
+  developing_countries: false
+  technology_education: false
+  local_poverty: false
+  international_poverty: false
+  utilities_access: false
+  food_and_water: false
+  wildlife: false
+  environment: false
+  children: false
+  world_peace: false
+  veterans: false
+  art_and_culture: false
+  business_support: false
+  religion: false
+  science_research: false
+  medical_research: false
+  healthcare_and_medical_aid: false
+  expand_in_anyway: MyText
+  number_available_hours: MyString
+  linkedin_profile: MyString
+  projects_you_are_interested_in: MyText
+
+two:
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  phone_number: MyString
+  zip: 1
+  your_skillsets: MyText
+  politics: false
+  vegetarian: false
+  education: false
+  developing_countries: false
+  technology_education: false
+  local_poverty: false
+  international_poverty: false
+  utilities_access: false
+  food_and_water: false
+  wildlife: false
+  environment: false
+  children: false
+  world_peace: false
+  veterans: false
+  art_and_culture: false
+  business_support: false
+  religion: false
+  science_research: false
+  medical_research: false
+  healthcare_and_medical_aid: false
+  expand_in_anyway: MyText
+  number_available_hours: MyString
+  linkedin_profile: MyString
+  projects_you_are_interested_in: MyText

@@ -1,0 +1,137 @@
+<%= form_for(@developer) do |f| %>
+  <% if @developer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@developer.errors.count, "error") %> prohibited this developer from being saved:</h2>
+
+      <ul>
+      <% @developer.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br>
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :phone_number %><br>
+    <%= f.text_field :phone_number %>
+  </div>
+  <div class="field">
+    <%= f.label :zip %><br>
+    <%= f.number_field :zip %>
+  </div>
+  <div class="field">
+    <%= f.label :your_skillsets %><br>
+    <%= f.text_area :your_skillsets %>
+  </div>
+  <div class="field">
+    <%= f.label :politics %><br>
+    <%= f.check_box :politics %>
+  </div>
+  <div class="field">
+    <%= f.label :vegetarian %><br>
+    <%= f.check_box :vegetarian %>
+  </div>
+  <div class="field">
+    <%= f.label :education %><br>
+    <%= f.check_box :education %>
+  </div>
+  <div class="field">
+    <%= f.label :developing_countries %><br>
+    <%= f.check_box :developing_countries %>
+  </div>
+  <div class="field">
+    <%= f.label :technology_education %><br>
+    <%= f.check_box :technology_education %>
+  </div>
+  <div class="field">
+    <%= f.label :local_poverty %><br>
+    <%= f.check_box :local_poverty %>
+  </div>
+  <div class="field">
+    <%= f.label :international_poverty %><br>
+    <%= f.check_box :international_poverty %>
+  </div>
+  <div class="field">
+    <%= f.label :utilities_access %><br>
+    <%= f.check_box :utilities_access %>
+  </div>
+  <div class="field">
+    <%= f.label :food_and_water %><br>
+    <%= f.check_box :food_and_water %>
+  </div>
+  <div class="field">
+    <%= f.label :wildlife %><br>
+    <%= f.check_box :wildlife %>
+  </div>
+  <div class="field">
+    <%= f.label :environment %><br>
+    <%= f.check_box :environment %>
+  </div>
+  <div class="field">
+    <%= f.label :children %><br>
+    <%= f.check_box :children %>
+  </div>
+  <div class="field">
+    <%= f.label :world_peace %><br>
+    <%= f.check_box :world_peace %>
+  </div>
+  <div class="field">
+    <%= f.label :veterans %><br>
+    <%= f.check_box :veterans %>
+  </div>
+  <div class="field">
+    <%= f.label :art_and_culture %><br>
+    <%= f.check_box :art_and_culture %>
+  </div>
+  <div class="field">
+    <%= f.label :business_support %><br>
+    <%= f.check_box :business_support %>
+  </div>
+  <div class="field">
+    <%= f.label :religion %><br>
+    <%= f.check_box :religion %>
+  </div>
+  <div class="field">
+    <%= f.label :science_research %><br>
+    <%= f.check_box :science_research %>
+  </div>
+  <div class="field">
+    <%= f.label :medical_research %><br>
+    <%= f.check_box :medical_research %>
+  </div>
+  <div class="field">
+    <%= f.label :healthcare_and_medical_aid %><br>
+    <%= f.check_box :healthcare_and_medical_aid %>
+  </div>
+  <div class="field">
+    <%= f.label :expand_in_anyway %><br>
+    <%= f.text_area :expand_in_anyway %>
+  </div>
+  <div class="field">
+    <%= f.label :number_available_hours %><br>
+    <%= f.text_field :number_available_hours %>
+  </div>
+  <div class="field">
+    <%= f.label :linkedin_profile %><br>
+    <%= f.text_field :linkedin_profile %>
+  </div>
+  <div class="field">
+    <%= f.label :projects_you_are_interested_in %><br>
+    <%= f.text_area :projects_you_are_interested_in %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
