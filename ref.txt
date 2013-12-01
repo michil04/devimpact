@@ -49,9 +49,9 @@ rake db:migrate
 # Download from getbootstrap.com
 # Install instructions at railsapps.github.io/twitter-bootstrap-rails.html
 
-cp bootstrap-3.0.2-dist/dist/js/bootstrap.js myApp/public/javascripts/
-cp bootstrap-3.0.2-dist/dist/css/*.css		 myApp/public/stylesheets/
-cp bootstrap-3.0.2-dist/dist/fonts/*		 myApp/public/images/
+cp /Downloads/bootstrap-3.0.2-dist/dist/js/bootstrap.js app/assets/javascripts/
+cp /Downloads/bootstrap-3.0.2-dist/dist/css/*.css		app/assets/stylesheets/
+cp /Downloads/bootstrap-3.0.2-dist/dist/fonts/*		 	app/assets/images/
 
 # Add the following line to myApp/Gemfile
 gem 'bootstrap-sass'
