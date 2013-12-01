@@ -1,0 +1,17 @@
+  [1m[36m (173.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (77.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to Register (20131127080649)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20131127080649"]]
+  [1m[35m (75.0ms)[0m  commit transaction
+Migrating to AddUsersIdToregister (20131127080936)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20131127080936"]]
+  [1m[36m (125.0ms)[0m  [1mcommit transaction[0m
+Migrating to CreateDevelopers (20131128045528)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (2.0ms)[0m  [1mCREATE TABLE "developers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "last_name" varchar(255), "email" varchar(255), "phone_number" varchar(255), "zip" integer, "your_skillsets" text, "politics" boolean, "vegetarian" boolean, "education" boolean, "developing_countries" boolean, "technology_education" boolean, "local_poverty" boolean, "international_poverty" boolean, "utilities_access" boolean, "food_and_water" boolean, "wildlife" boolean, "environment" boolean, "children" boolean, "world_peace" boolean, "veterans" boolean, "art_and_culture" boolean, "business_support" boolean, "religion" boolean, "science_research" boolean, "medical_research" boolean, "healthcare_and_medical_aid" boolean, "expand_in_anyway" text, "number_available_hours" varchar(255), "linkedin_profile" varchar(255), "projects_you_are_interested_in" text, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20131128045528"]]
+  [1m[36m (134.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
