@@ -100,7 +100,7 @@
     <%= csrf_meta_tags %>
   </head>
 
-  <body>
+  <body style="background-image:url(Green-Lines-Background.jpg)">
 
     <div class="container">
 
@@ -128,6 +128,7 @@
         <p class="lead">Our mission is to match talented technology professionals with a cause they are passionate about in order to eliminate technology barriers for organizations trying to make a difference in the world.</p>
         <a class="btn btn-large btn-success" href="http://getbootstrap.com/2.3.2/examples/justified-nav.html#">Get started today</a>
       </div>
+	  <%= image_tag "Home-Page-Picture.jpg", alt:"Home Page Picture" %>
 
       <hr>
 
@@ -152,6 +153,10 @@
 
       <hr>
 
+	  <!-- View contents appear here -->
+	  <^= yield %>
+
+	  <!-- define footer -->
       <div class="footer">
         <p>© Company 2013</p>
       </div>
@@ -161,33 +166,18 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="./bootstrap-justified-nav-files/jquery.js"></script>
-    <script src="./bootstrap-justified-nav-files/bootstrap-transition.js"></script>
-    <script src="./bootstrap-justified-nav-files/bootstrap-alert.js"></script>
-    <script src="./bootstrap-justified-nav-files/bootstrap-modal.js"></script>
-    <script src="./bootstrap-justified-nav-files/bootstrap-dropdown.js"></script>
-    <script src="./bootstrap-justified-nav-files/bootstrap-scrollspy.js"></script>
-    <script src="./bootstrap-justified-nav-files/bootstrap-tab.js"></script>
-    <script src="./bootstrap-justified-nav-files/bootstrap-tooltip.js"></script>
-    <script src="./bootstrap-justified-nav-files/bootstrap-popover.js"></script>
-    <script src="./bootstrap-justified-nav-files/bootstrap-button.js"></script>
-    <script src="./bootstrap-justified-nav-files/bootstrap-collapse.js"></script>
-    <script src="./bootstrap-justified-nav-files/bootstrap-carousel.js"></script>
-    <script src="./bootstrap-justified-nav-files/bootstrap-typeahead.js"></script>
-
-    <main role="main">
-      <div class="container">
-        <div class="content">
-           <div class="row">
-            <div class="span12">
-              <%= render 'layouts/messages' %>
-              <%= yield %>
-            </div>
-          </div>
-          <footer>
-          </footer>
-        </div>
-      </div>
-    </main>
+    <script src="bootstrap-justified-nav-files/jquery.js"></script>
+    <script src="bootstrap-justified-nav-files/bootstrap-transition.js"></script>
+    <script src="bootstrap-justified-nav-files/bootstrap-alert.js"></script>
+    <script src="bootstrap-justified-nav-files/bootstrap-modal.js"></script>
+    <script src="bootstrap-justified-nav-files/bootstrap-dropdown.js"></script>
+    <script src="bootstrap-justified-nav-files/bootstrap-scrollspy.js"></script>
+    <script src="assets/bootstrap-justified-nav-files/bootstrap-tab.js"></script>
+    <script src="assets/bootstrap-justified-nav-files/bootstrap-tooltip.js"></script>
+    <script src="assets/bootstrap-justified-nav-files/bootstrap-popover.js"></script>
+    <script src="assets/bootstrap-justified-nav-files/bootstrap-button.js"></script>
+    <script src="assets/bootstrap-justified-nav-files/bootstrap-collapse.js"></script>
+    <script src="assets/bootstrap-justified-nav-files/bootstrap-carousel.js"></script>
+    <script src="assets/bootstrap-justified-nav-files/bootstrap-typeahead.js"></script>
 
 </body></html>
