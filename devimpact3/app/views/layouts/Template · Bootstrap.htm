@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <!-- saved from url=(0057)http://getbootstrap.com/2.3.2/examples/justified-nav.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <title>Template · Bootstrap</title>
+    <title><%= content_for?(:title) ? yield(:title) : "DevImpact" %></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "DevImpact on Rails" %>">
+    <meta name="author" content="Mike Hill">
 
     <!-- Le styles -->
     <link href="http://getbootstrap.com/2.3.2/assets/css/bootstrap.css" rel="stylesheet">
@@ -90,9 +92,12 @@
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="http://getbootstrap.com/2.3.2/assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="http://getbootstrap.com/2.3.2/assets/ico/favicon.png">
+    <%= stylesheet_link_tag "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
   </head>
 
   <body>
@@ -100,7 +105,7 @@
     <div class="container">
 
       <div class="masthead">
-        <h3 class="muted">Project name</h3>
+        <h3 class="muted">DevImpact</h3>
         <div class="navbar">
           <div class="navbar-inner">
             <div class="container">
@@ -119,8 +124,8 @@
 
       <!-- Jumbotron -->
       <div class="jumbotron">
-        <h1>Marketing stuff!</h1>
-        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <h1>Connecting Technical Innovation and Social Impact</h1>
+        <p class="lead">Our mission is to match talented technology professionals with a cause they are passionate about in order to eliminate technology barriers for organizations trying to make a difference in the world.</p>
         <a class="btn btn-large btn-success" href="http://getbootstrap.com/2.3.2/examples/justified-nav.html#">Get started today</a>
       </div>
 
@@ -156,20 +161,33 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="./Template · Bootstrap_files/jquery.js"></script>
-    <script src="./Template · Bootstrap_files/bootstrap-transition.js"></script>
-    <script src="./Template · Bootstrap_files/bootstrap-alert.js"></script>
-    <script src="./Template · Bootstrap_files/bootstrap-modal.js"></script>
-    <script src="./Template · Bootstrap_files/bootstrap-dropdown.js"></script>
-    <script src="./Template · Bootstrap_files/bootstrap-scrollspy.js"></script>
-    <script src="./Template · Bootstrap_files/bootstrap-tab.js"></script>
-    <script src="./Template · Bootstrap_files/bootstrap-tooltip.js"></script>
-    <script src="./Template · Bootstrap_files/bootstrap-popover.js"></script>
-    <script src="./Template · Bootstrap_files/bootstrap-button.js"></script>
-    <script src="./Template · Bootstrap_files/bootstrap-collapse.js"></script>
-    <script src="./Template · Bootstrap_files/bootstrap-carousel.js"></script>
-    <script src="./Template · Bootstrap_files/bootstrap-typeahead.js"></script>
+    <script src="./bootstrap-justified-nav-files/jquery.js"></script>
+    <script src="./bootstrap-justified-nav-files/bootstrap-transition.js"></script>
+    <script src="./bootstrap-justified-nav-files/bootstrap-alert.js"></script>
+    <script src="./bootstrap-justified-nav-files/bootstrap-modal.js"></script>
+    <script src="./bootstrap-justified-nav-files/bootstrap-dropdown.js"></script>
+    <script src="./bootstrap-justified-nav-files/bootstrap-scrollspy.js"></script>
+    <script src="./bootstrap-justified-nav-files/bootstrap-tab.js"></script>
+    <script src="./bootstrap-justified-nav-files/bootstrap-tooltip.js"></script>
+    <script src="./bootstrap-justified-nav-files/bootstrap-popover.js"></script>
+    <script src="./bootstrap-justified-nav-files/bootstrap-button.js"></script>
+    <script src="./bootstrap-justified-nav-files/bootstrap-collapse.js"></script>
+    <script src="./bootstrap-justified-nav-files/bootstrap-carousel.js"></script>
+    <script src="./bootstrap-justified-nav-files/bootstrap-typeahead.js"></script>
 
-  
+    <main role="main">
+      <div class="container">
+        <div class="content">
+           <div class="row">
+            <div class="span12">
+              <%= render 'layouts/messages' %>
+              <%= yield %>
+            </div>
+          </div>
+          <footer>
+          </footer>
+        </div>
+      </div>
+    </main>
 
 </body></html>
