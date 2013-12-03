@@ -95,40 +95,62 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="http://getbootstrap.com/2.3.2/assets/ico/favicon.png">
+	<!-- Why use "default" vs "application" here? -->
     <%= stylesheet_link_tag "application", :media => "all" %>
+	<!-- Why use "default" vs "application" here? -->
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
   </head>
 
-  <body style="background-image:url(Green-Lines-Background.jpg)">
+  <body style="background-image:url(/assets/Green-Lines-Background.jpg)">
+
+
+	<div class="masthead">
+	  <h3 class="muted">DevImpact</h3>
+	  <div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+		  <div class="container">
+		    <span class="icon-bar"></span>
+		    <span class="icon-bar"></span>
+		    <span class="icon-bar"></span>
+			<a class="brand" href="/">
+			  <img id="devImpactLogo" class="logo" src="/assets/devImpactLogo.jpg" height=48 width=108 >
+			</a>
+			<ul class="nav">
+			  <li class="active"><a href="http://getbootstrap.com/2.3.2/examples/justified-nav.html#">Home</a></li>
+			  <li><a href="http://getbootstrap.com/2.3.2/examples/justified-nav.html#">Projects</a></li>
+			  <li><a href="http://getbootstrap.com/2.3.2/examples/justified-nav.html#">Services</a></li>
+			  <li><a href="http://getbootstrap.com/2.3.2/examples/justified-nav.html#">Downloads</a></li>
+			  <li><a href="http://getbootstrap.com/2.3.2/examples/justified-nav.html#">About</a></li>
+			  <li><a href="http://getbootstrap.com/2.3.2/examples/justified-nav.html#">Contact</a></li>
+			</ul>
+		  </div>
+		</div>
+	  </div><!-- /.navbar -->
+	</div>
+
+	<!-- non-scrolling background splash image -->
+	<!-- Splash -->
+	<div class="splash-container fixed-height">
+	  <div class="bg" style="background-image:url('/assets/Home-Page-Picture.jpg'); display: block;"></div>
+	  <div class="splash-background-container" style="background-color: rgba(0,0,0,0.50);">
+		<div class="container">
+		  <div class="row">
+			<div class="span12 content">
+			  <img src="/assets/Home-Page-Picture.jpg" alt="Home Page Picture">
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
 
     <div class="container">
-
-      <div class="masthead">
-        <h3 class="muted">DevImpact</h3>
-        <div class="navbar">
-          <div class="navbar-inner">
-            <div class="container">
-              <ul class="nav">
-                <li class="active"><a href="http://getbootstrap.com/2.3.2/examples/justified-nav.html#">Home</a></li>
-                <li><a href="http://getbootstrap.com/2.3.2/examples/justified-nav.html#">Projects</a></li>
-                <li><a href="http://getbootstrap.com/2.3.2/examples/justified-nav.html#">Services</a></li>
-                <li><a href="http://getbootstrap.com/2.3.2/examples/justified-nav.html#">Downloads</a></li>
-                <li><a href="http://getbootstrap.com/2.3.2/examples/justified-nav.html#">About</a></li>
-                <li><a href="http://getbootstrap.com/2.3.2/examples/justified-nav.html#">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        </div><!-- /.navbar -->
-      </div>
-
       <!-- Jumbotron -->
       <div class="jumbotron">
-        <h1>Connecting Technical Innovation and Social Impact</h1>
+        <h2>Connecting Technical Innovation and Social Impact</h2>
         <p class="lead">Our mission is to match talented technology professionals with a cause they are passionate about in order to eliminate technology barriers for organizations trying to make a difference in the world.</p>
         <a class="btn btn-large btn-success" href="http://getbootstrap.com/2.3.2/examples/justified-nav.html#">Get started today</a>
       </div>
-	  <%= image_tag "Home-Page-Picture.jpg", alt:"Home Page Picture" %>
 
       <hr>
 
